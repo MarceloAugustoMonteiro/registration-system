@@ -1,25 +1,33 @@
-# sistemaCadastro
-Sistema de Cadastro funcionário/dependente com sqliteDB.
-# Exemplo de Java DAO e SQLite
+# Registration system
+Employee/Dependent Registration System using SQLite database.  
+# Example of Java DAO and SQLite
 
-## COMPILAR
+## COMPILE
 
-Pra compilar o via linha de comando, vamos criar um arquivo contendo todos os nossos arquivos fontes:
+To compile via command line, create a file containing all your source files:
 
-**No Windows:**
+**On Windows:**
 
+```bash
 dir /s /B *.java > sources.txt
+```
 
-**No Linux:**
+**On Linux:**
 
+```bash
 find -name "*.java" > sources.txt
+```
 
-Depois basta complilarmos o projeto com:
+Then, compile the project with:
 
+```bash
 javac @sources.txt
+```
 
-## EXECUTAR
+## RUN
 
-Considerando que driver de conexão esteja na pasta libs e estamos na pasta raiz, execute o seguinte comando:
+Assuming the JDBC driver is located in the `libs` folder and you are in the root directory, run the following command:
 
+```bash
 java -classpath .:libs/sqlite-jdbc-3.32.3.2.jar src.com.app.main.Main
+```
